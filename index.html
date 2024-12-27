@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+<body>
+<p>
+    // Task 1: map() Method<br/>
+    // Problem Statement: Ek array [10, 20, 30, 40, 50] diya gaya hai.<br/>
+    // Is array ke har element ko 5 se multiply karke ek naya array banao.<br/>
+    // Output: [50, 100, 150, 200, 250]<br/>
+    let arr = [10, 20, 30, 40, 50];<br/>
+    let mapedArr = arr.map(function(element){<br/>
+        return element * 5;<br/>
+    })<br/>
+    console.log(mapedArr);<br/>
+    <br/>
+    // Task 2: filter() Method<br/>
+    // Problem Statement: Ek array [15, 26, 33, 40, 18, 29] diya gaya hai.<br/>
+    // Sirf even numbers ko filter karke ek naya array banao.<br/>
+    // Output: [26, 40, 18]<br/>
+    let arr2 = [15, 26, 33, 40, 18, 29];<br/>
+    let filteredArr = arr2.filter(function(element){<br/>
+        return element % 2 == 0;<br/>
+    });<br/>
+    console.log(filteredArr);<br/>
+
+    // Task 3: reduce() Method<br/>
+    // Problem Statement: Ek array [5, 10, 15, 20] diya gaya hai.<br/>
+    //  Is array ke sare elements ka sum calculate karo.<br/>
+    // Output: 50<br/>
+    let arr3 = [5, 10, 15, 20];<br/>
+    let sum = arr3.reduce((num1 , num2) => num1 + num2 , 0);<br/>
+    console.log(sum);<br/>
+    <br/>
+    // Task 4: find() Method<br/>
+    // Problem Statement: Ek array [7, 14, 21, 28, 35] diya gaya hai.<br/>
+    //  Is array me pehla number find karo jo 20 se bada ho.<br/>
+    // Output: 21<br/>
+    let arr4 = [7, 14, 21, 28, 35];<br/>
+    let findNumber = arr4.find(number => number > 20);<br/>
+    console.log(findNumber);<br/>
+    <br/>
+    // Task 5: findIndex() Method<br/>
+    // Problem Statement: Ek array [3, 5, 7, 9, 11] diya gaya hai.<br/>
+    //  Us element ka index find karo jo 7 ke barabar ho.<br/>
+    // Output: 2<br/>
+    let arr5 = [3, 5, 7, 9, 11];<br/>
+    let indexOfNumber = arr5.findIndex(number => number === 7);<br/>
+    console.log(indexOfNumber);<br/>
+    <br/>
+    // Task 6: includes() Method<br/>
+    // Problem Statement: Ek array [12, 24, 36, 48, 60] diya gaya hai.<br/>
+    //  Check karo ki 36 is array me hai ya nahi.<br/>
+    // Output: true<br/>
+    let arr6 = [12, 24, 36, 48, 60];<br/>
+    let isNumberIncludes = arr6.includes(36);<br/>
+    console.log(isNumberIncludes);<br/>
+    <br/>
+    // Task 7: indexOf() Method<br/>
+    // Problem Statement: Ek array [1, 2, 3, 4, 2, 5] diya gaya hai.<br/>
+    //  Array me 2 ka index find karo.<br/>
+    // Output: 1<br/>
+    let arr7 = [1, 2, 3, 4, 2, 5];<br/>
+    let findIndexOfNumber = arr7.indexOf(2);<br/>
+    console.log(findIndexOfNumber);<br/>
+    <br/>
+    // Task 8: lastIndexOf() Method
+    // Problem Statement: Ek array [1, 2, 3, 4, 2, 5] diya gaya hai.<br/>
+    // Array me 2 ka last index find karo.<br/>
+    // Output: 4<br/>
+    let arr8 = [1, 2, 3, 4, 2, 5];<br/>
+    let lastIndex = arr8.lastIndexOf(2);<br/>
+    console.log(lastIndex);<br/>
+    <br/>
+    // Tasks Completed!<br/>
+</p>
+    <script src="script.js"></script>
+</body>
+</html>
